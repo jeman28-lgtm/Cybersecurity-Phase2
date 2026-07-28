@@ -25,13 +25,17 @@ To master the transition of core security operations into highly scalable, virtu
 
 ---
 
-## ğŸ—‚ï¸ Portfolio Laboratory Index
+## í·‚ï¸ Portfolio Laboratory Index
 
 This repository is structurally indexed to track production-ready infrastructure builds as they are deployed:
 
 *   ğŸ“‚ **[`tlab-05-budgeted-identity`](./tlab-05-budgeted-identity/)**
     *   **Scenario:** Financial Vault deployment for Titan FinTech.
     *   **Controls Enforced:** Surgical `s3:PutObject` least-privilege IAM configuration via Terraform interpolation, dynamic S3 asset privacy blocks, and AWS hard-cap budget triggers to mitigate "Denial of Wallet" vectors.
+
+*   ğŸ“‚ **[`tlab-06-monitored-fortress`](./tlab-06-monitored-fortress/)**
+    *   **Scenario:** Production Network Perimeter & Wiretap for Titan FinTech.
+    *   **Controls Enforced:** Built custom VPC with isolated public subnetting, VPC Flow Logs capturing `ALL` IP traffic streamed to CloudWatch, and Zero Trust EC2 deployment with zero inbound security group rules accessible strictly via AWS Systems Manager (SSM).
 
 ---
 
