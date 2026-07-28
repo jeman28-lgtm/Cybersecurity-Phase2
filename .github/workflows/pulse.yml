@@ -2,7 +2,7 @@ name: The First Pulse
 on: [push]  
 jobs:  
   test-runner:  
-  runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest  
     steps:  
       - name: Print Status  
         run: echo "The Conveyor Belt is Operational. Hello DevSecOps!" 
