@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'TLAB7/**'
 permissions:
   id-token: write
   contents: read
@@ -31,7 +33,7 @@ jobs:
       - name: SAST Quality Gate (tfsec)
         uses: aquasecurity/tfsec-pr-commenter-action@v1.2.0
         with:
-          tfsec_args: --soft-fail=false ./TLAB7
+          tfsec_args: --soft-fail=false
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Terraform Apply
