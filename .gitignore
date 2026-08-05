@@ -1,0 +1,11 @@
+# Terraform state and local configuration
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+*.tfvars
+
+# OS and Editor junk
+.DS_Store
+Thumbs.db
+.vscode/
